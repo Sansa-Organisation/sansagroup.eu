@@ -8,7 +8,7 @@ import { SansaMark } from "./Logo";
 const links = [
   { href: "/services", label: "Services" },
   { href: "/sansavision", label: "Sansavision" },
-  { href: "/grasp", label: "Grasp.im" },
+  { href: "/grasp", label: "Grasp" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -48,7 +48,7 @@ export function Navbar() {
                 Sansa Group
               </span>
               <span className="block text-[10px] font-medium uppercase tracking-[0.24em] text-white/50">
-                sansagroup.eu
+                SANSAGROUP.EU
               </span>
             </span>
           </Link>
@@ -129,7 +129,7 @@ export function Navbar() {
               </span>
             </Link>
           ))}
-          <p className="mt-8 text-sm text-white/40">contact@sansagroup.eu — Stockholm · EU · Remote worldwide</p>
+          <p className="mt-8 text-sm text-white/40">contact@sansagroup.eu — Gothenburg · EU · Remote worldwide</p>
         </nav>
         <button aria-hidden tabIndex={-1} className="hidden">
           <X />

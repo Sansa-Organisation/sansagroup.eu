@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="mesh-bg px-5 pb-24 pt-36 md:pt-44">
-      <div className="mx-auto grid max-w-[1100px] grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+    <section className="mesh-bg px-5 pb-28 pt-40 md:pb-36 md:pt-56">
+      <div className="mx-auto grid max-w-[1100px] grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
         <Reveal>
           <h1 className="text-[38px] font-semibold leading-[1.04] tracking-[-0.03em] text-white md:text-[54px]">
             Start a project.
@@ -27,7 +27,7 @@ export default function ContactPage() {
             </a>
             <div className="flex items-center gap-4 rounded-2xl bg-white/[0.03] px-5 py-4 ring-1 ring-white/[0.08]">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.05] text-white/70"><MapPin size={19} /></span>
-              <span><span className="block text-[12px] uppercase tracking-[0.14em] text-white/40">Base</span><span className="block text-[15px] font-semibold text-white">Stockholm · EU · Remote worldwide</span></span>
+              <span><span className="block text-[12px] uppercase tracking-[0.14em] text-white/40">Base</span><span className="block text-[15px] font-semibold text-white">Gothenburg · EU · Remote worldwide</span></span>
             </div>
             <div className="flex items-center gap-4 rounded-2xl bg-white/[0.03] px-5 py-4 ring-1 ring-white/[0.08]">
               <span className="flex h-10 w-10 items-center justify-center rounded-full bg-white/[0.05] text-white/70"><Clock size={19} /></span>

@@ -32,8 +32,8 @@ const services = [
   {
     icon: Robot,
     title: "Robotics",
-    body: "Perception, grasping and field pilots with Grasp.im — from lab demo to robust deployment.",
-    tags: ["Perception", "Grasp.im"],
+    body: "Perception, grasping and field pilots with Grasp — from lab demo to robust deployment.",
+    tags: ["Perception", "Grasp"],
     span: "md:col-span-5",
   },
   {
@@ -77,32 +77,32 @@ export default function Home() {
   return (
     <>
       {/* ── HERO ─────────────────────────────────────────── */}
-      <section className="mesh-bg relative overflow-hidden pb-16 pt-32 md:pb-24 md:pt-40">
-        <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-12 px-5 lg:grid-cols-[1.05fr_0.95fr]">
+      <section className="mesh-bg relative overflow-hidden pb-20 pt-36 md:pb-32 md:pt-52">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-1 items-center gap-14 px-5 lg:grid-cols-[1.05fr_0.95fr] lg:gap-20">
           <div>
             <Reveal>
               <p className="inline-flex items-center gap-2 rounded-full bg-white/[0.05] py-1.5 pl-2 pr-4 text-[11px] font-semibold uppercase tracking-[0.18em] text-white/65 ring-1 ring-white/10">
                 <span className="rounded-full bg-[#2EE6A8] px-2.5 py-1 text-[10px] font-bold tracking-[0.14em] text-[#04110b]">
                   New
                 </span>
-                Sansavision SaaS studio · Grasp.im robotics live
+                Sansavision SaaS studio · Grasp robotics live
               </p>
             </Reveal>
             <Reveal delay={0.08}>
-              <h1 className="text-balance mt-6 text-[42px] font-semibold leading-[1.02] tracking-[-0.03em] text-white md:text-[64px]">
+              <h1 className="text-balance mt-8 text-[42px] font-semibold leading-[1.02] tracking-[-0.03em] text-white md:text-[64px]">
                 Consulting that
                 <br />
                 ships to <em className="font-semibold not-italic text-[#2EE6A8]">production.</em>
               </h1>
             </Reveal>
             <Reveal delay={0.16}>
-              <p className="mt-5 max-w-[46ch] text-[16.5px] leading-relaxed text-white/60">
+              <p className="mt-6 max-w-[46ch] text-[16.5px] leading-relaxed text-white/60">
                 Sansa Group AB helps European companies build software, SaaS,
                 AI and robots — strategy through delivery.
               </p>
             </Reveal>
             <Reveal delay={0.24}>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Link
                   href="/contact"
                   className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#2EE6A8] px-7 py-4 text-[15px] font-semibold text-[#04110b] transition-all duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] hover:bg-[#7df0c4] active:scale-[0.98]"
@@ -121,7 +121,7 @@ export default function Home() {
               </div>
             </Reveal>
             <Reveal delay={0.3}>
-              <dl className="mt-10 grid max-w-[520px] grid-cols-2 gap-x-8 gap-y-5 border-t border-white/[0.08] pt-7 sm:grid-cols-4">
+              <dl className="mt-12 grid max-w-[520px] grid-cols-2 gap-x-8 gap-y-6 border-t border-white/[0.08] pt-8 sm:grid-cols-4">
                 {stats.map((s) => (
                   <div key={s.v}>
                     <dt className="font-mono text-[22px] font-semibold tracking-tight text-white">{s.k}</dt>
@@ -170,18 +170,18 @@ export default function Home() {
               <SansaMark className="h-9 w-9 text-white" />
               <div>
                 <p className="text-[13.5px] font-semibold text-white">Sansa Group AB</p>
-                <p className="font-mono text-[11.5px] text-white/45">Stockholm · EU · Remote worldwide</p>
+                <p className="font-mono text-[11.5px] text-white/45">Gothenburg · EU · Remote worldwide</p>
               </div>
             </div>
           </Reveal>
         </div>
 
         {/* logo strip */}
-        <div className="mx-auto mt-14 max-w-[1200px] px-5 md:mt-20">
+        <div className="mx-auto mt-16 max-w-[1200px] px-5 md:mt-24">
           <div className="mask-fade-x overflow-hidden border-y border-white/[0.07] py-5">
             <div className="flex w-max animate-marquee gap-12 pr-12">
               {[...Array(2)].flatMap((_, k) =>
-                ["SANSAVISION", "GRASP.IM", "SAAS", "ROBOTICS", "ANNOTATION", "AI SYSTEMS", "CLOUDFLARE EDGE", "EU GDPR"].map((w, i) => (
+                ["SANSAVISION", "GRASP", "SAAS", "ROBOTICS", "ANNOTATION", "AI SYSTEMS", "CLOUDFLARE EDGE", "EU GDPR"].map((w, i) => (
                   <span key={`${k}-${i}`} className="flex items-center gap-12 whitespace-nowrap font-mono text-[12px] tracking-[0.28em] text-white/30">
                     {w} <span className="text-[#2EE6A8]/50">◆</span>
                   </span>
@@ -193,13 +193,13 @@ export default function Home() {
       </section>
 
       {/* ── DIVISIONS ────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1200px] px-5 py-20 md:py-28">
+      <section className="mx-auto max-w-[1200px] px-5 py-24 md:py-36">
         <Reveal>
           <h2 className="max-w-[22ch] text-[32px] font-semibold leading-[1.08] tracking-[-0.02em] text-white md:text-[46px]">
             One group. Two specialist divisions. Zero hand-offs lost.
           </h2>
         </Reveal>
-        <Stagger className="mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <Stagger className="mt-12 grid grid-cols-1 gap-5 lg:grid-cols-2 md:mt-14">
           <StaggerItem>
             <Link
               href="/sansavision"
@@ -214,7 +214,7 @@ export default function Home() {
                     <ArrowUpRight size={19} weight="bold" />
                   </span>
                 </div>
-                <h3 className="mt-7 text-[30px] font-semibold tracking-tight text-white md:text-[36px]">Sansavision</h3>
+                <h3 className="mt-8 text-[30px] font-semibold tracking-tight text-white md:mt-9 md:text-[36px]">Sansavision</h3>
                 <p className="mt-3 max-w-[46ch] text-[15.5px] leading-relaxed text-white/60">
                   Our SaaS & software subdivision. Product engineering, multi-tenant
                   platforms, billing, and AI features — designed, built and scaled
@@ -244,7 +244,7 @@ export default function Home() {
                     <ArrowUpRight size={19} weight="bold" />
                   </span>
                 </div>
-                <h3 className="mt-7 text-[30px] font-semibold tracking-tight text-white md:text-[36px]">Grasp.im</h3>
+                <h3 className="mt-8 text-[30px] font-semibold tracking-tight text-white md:mt-9 md:text-[36px]">Grasp</h3>
                 <p className="mt-3 max-w-[46ch] text-[15.5px] leading-relaxed text-white/60">
                   Our robotics & annotation practice. Perception systems, grasping
                   pilots, and production-grade labelling ops for vision and
@@ -265,7 +265,7 @@ export default function Home() {
 
       {/* ── SERVICES BENTO ──────────────────────────────── */}
       <section className="border-t border-white/[0.07] bg-[#04070b]">
-        <div className="mx-auto max-w-[1200px] px-5 py-20 md:py-28">
+        <div className="mx-auto max-w-[1200px] px-5 py-24 md:py-36">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <Reveal>
               <h2 className="max-w-[20ch] text-[32px] font-semibold leading-[1.08] tracking-[-0.02em] text-white md:text-[46px]">
@@ -282,7 +282,7 @@ export default function Home() {
             </Reveal>
           </div>
 
-          <Stagger className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-12">
+          <Stagger className="mt-12 grid grid-cols-1 gap-5 md:grid-cols-12 md:mt-14">
             {services.map((s) => (
               <StaggerItem key={s.title} className={s.span}>
                 <div className="group h-full rounded-[1.75rem] bg-white/[0.03] p-1.5 ring-1 ring-white/[0.08] transition-all duration-500 hover:bg-white/[0.05] hover:ring-white/[0.14]">
@@ -308,8 +308,8 @@ export default function Home() {
       </section>
 
       {/* ── PROCESS ─────────────────────────────────────── */}
-      <section className="mx-auto max-w-[1200px] px-5 py-20 md:py-28">
-        <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+      <section className="mx-auto max-w-[1200px] px-5 py-24 md:py-36">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
           <div>
             <Reveal>
               <p className="inline-flex rounded-full bg-white/[0.05] px-3.5 py-1.5 text-[10.5px] font-semibold uppercase tracking-[0.2em] text-white/55 ring-1 ring-white/10">
@@ -355,7 +355,7 @@ export default function Home() {
 
       {/* ── CONTACT ─────────────────────────────────────── */}
       <section className="border-t border-white/[0.07] bg-[#04070b]">
-        <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-12 px-5 py-20 md:py-28 lg:grid-cols-[0.85fr_1.15fr]">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-1 gap-14 px-5 py-24 md:py-36 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <Reveal>
             <h2 className="text-[32px] font-semibold leading-[1.08] tracking-[-0.02em] text-white md:text-[44px]">
               Tell us what
@@ -370,7 +370,7 @@ export default function Home() {
               {[
                 ["Email", "contact@sansagroup.eu", "mailto:contact@sansagroup.eu"],
                 ["Software / SaaS", "Sansavision →", "/sansavision"],
-                ["Robotics / Annotation", "Grasp.im →", "/grasp"],
+                  ["Robotics / Annotation", "Grasp →", "/grasp"],
               ].map(([k, v, href]) => (
                 <a
                   key={k}

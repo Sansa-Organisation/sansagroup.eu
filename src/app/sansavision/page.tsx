@@ -11,21 +11,21 @@ export const metadata: Metadata = {
 export default function SansavisionPage() {
   return (
     <>
-      <section className="mesh-bg px-5 pb-14 pt-36 md:pt-44">
+      <section className="mesh-bg px-5 pb-20 pt-40 md:pb-24 md:pt-56">
         <div className="mx-auto max-w-[1100px]">
           <Reveal>
             <p className="inline-flex rounded-full bg-[#2EE6A8]/10 px-3.5 py-1.5 text-[10.5px] font-bold uppercase tracking-[0.2em] text-[#2EE6A8] ring-1 ring-[#2EE6A8]/25">
               Division · Sansavision
             </p>
-            <h1 className="mt-5 max-w-[20ch] text-[38px] font-semibold leading-[1.04] tracking-[-0.03em] text-white md:text-[58px]">
+            <h1 className="mt-6 max-w-[20ch] text-[38px] font-semibold leading-[1.04] tracking-[-0.03em] text-white md:text-[58px]">
               SaaS, engineered like you have to run it.
             </h1>
-            <p className="mt-5 max-w-[60ch] text-[16px] leading-relaxed text-white/60">
+            <p className="mt-6 max-w-[60ch] text-[16px] leading-relaxed text-white/60">
               Sansavision is Sansa Group&apos;s software & SaaS subdivision. We design,
               build and scale multi-tenant products on Next.js 16, React 19 and the
               Cloudflare edge — with billing, auth, AI and analytics done right the first time.
             </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2EE6A8] px-7 py-4 text-[15px] font-semibold text-[#04110b] hover:bg-[#7df0c4]">
                 Scope a SaaS build <ArrowRight size={16} weight="bold" />
               </Link>
@@ -36,8 +36,8 @@ export default function SansavisionPage() {
           </Reveal>
         </div>
       </section>
-      <section className="mx-auto max-w-[1100px] px-5 pb-24">
-        <Stagger className="grid gap-4 md:grid-cols-3">
+      <section className="mx-auto max-w-[1100px] px-5 pb-28 md:pb-36">
+        <Stagger className="grid gap-5 md:grid-cols-3">
           {[
             ["Greenfield SaaS", "Tenancy, roles, billing (Stripe), onboarding, admin — the boring parts, perfect."],
             ["Rebuilds & rescue", "Strangler rewrites of Rails/Laravel/WordPress monoliths to the edge, zero-downtime."],

@@ -13,7 +13,7 @@ export function LegalShell({
   children: ReactNode;
 }) {
   return (
-    <section className="mesh-bg px-5 pb-24 pt-36 md:pt-44">
+    <section className="mesh-bg px-5 pb-28 pt-40 md:pb-36 md:pt-56">
       <div className="mx-auto max-w-[860px]">
         <p className="inline-flex rounded-full bg-white/[0.05] px-3.5 py-1.5 text-[10.5px] font-semibold uppercase tracking-[0.2em] text-white/55 ring-1 ring-white/10">
           {eyebrow}

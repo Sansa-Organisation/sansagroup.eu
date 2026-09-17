@@ -14,7 +14,7 @@ const cols = [
     title: "Divisions",
     links: [
       { href: "/sansavision", label: "Sansavision — SaaS" },
-      { href: "/grasp", label: "Grasp.im — Robotics" },
+      { href: "/grasp", label: "Grasp — Robotics" },
     ],
   },
   {
@@ -32,7 +32,7 @@ const cols = [
 export function Footer() {
   return (
     <footer className="relative border-t border-white/[0.07] bg-[#04070b]">
-      <div className="mx-auto max-w-[1200px] px-5 py-16 md:py-20">
+      <div className="mx-auto max-w-[1200px] px-5 py-20 md:py-28">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.3fr_2fr]">
           <div>
             <Link href="/" className="flex items-center gap-3">
@@ -57,7 +57,7 @@ export function Footer() {
                 rel="noreferrer"
                 className="rounded-full bg-white/[0.05] px-4 py-2 text-[12.5px] font-medium text-white/70 ring-1 ring-white/10 transition-colors hover:bg-white/[0.09] hover:text-white"
               >
-                sansavision ↗
+                Sansavision ↗
               </a>
               <a
                 href="https://grasp.im"
@@ -65,7 +65,7 @@ export function Footer() {
                 rel="noreferrer"
                 className="rounded-full bg-white/[0.05] px-4 py-2 text-[12.5px] font-medium text-white/70 ring-1 ring-white/10 transition-colors hover:bg-white/[0.09] hover:text-white"
               >
-                grasp.im ↗
+                Grasp ↗
               </a>
               <a
                 href="mailto:contact@sansagroup.eu"
@@ -101,7 +101,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col gap-4 border-t border-white/[0.07] pt-7 md:flex-row md:items-center md:justify-between">
           <p className="text-[13px] text-white/40">
-            © {new Date().getFullYear()} Sansa Group AB · Org.nr — Stockholm, Sweden ·
+            © {new Date().getFullYear()} Sansa Group AB · Org.nr — Gothenburg, Sweden ·
             sansagroup.eu
           </p>
           <p className="font-mono text-[12px] text-white/30">

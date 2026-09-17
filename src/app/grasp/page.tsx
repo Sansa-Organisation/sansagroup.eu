@@ -4,40 +4,40 @@ import { ArrowRight, Check } from "@phosphor-icons/react/dist/ssr";
 import { Reveal, Stagger, StaggerItem } from "@/components/Reveal";
 
 export const metadata: Metadata = {
-  title: "Grasp.im — Robotics & Annotation",
-  description: "Grasp.im, the Sansa Group robotics & annotation practice: perception, grasping pilots, vision/3D labelling ops.",
+  title: "Grasp — Robotics & Annotation",
+  description: "Grasp, the Sansa Group robotics & annotation division: perception, grasping pilots, vision/3D labelling ops.",
 };
 
 export default function GraspPage() {
   return (
     <>
-      <section className="mesh-bg px-5 pb-14 pt-36 md:pt-44">
+      <section className="mesh-bg px-5 pb-20 pt-40 md:pb-24 md:pt-56">
         <div className="mx-auto max-w-[1100px]">
           <Reveal>
             <p className="inline-flex rounded-full bg-white/[0.06] px-3.5 py-1.5 text-[10.5px] font-bold uppercase tracking-[0.2em] text-white/70 ring-1 ring-white/12">
-              Practice · Grasp.im
+              Division · Grasp
             </p>
-            <h1 className="mt-5 max-w-[20ch] text-[38px] font-semibold leading-[1.04] tracking-[-0.03em] text-white md:text-[58px]">
+            <h1 className="mt-6 max-w-[20ch] text-[38px] font-semibold leading-[1.04] tracking-[-0.03em] text-white md:text-[58px]">
               Robots that grasp. Data that trains them.
             </h1>
-            <p className="mt-5 max-w-[60ch] text-[16px] leading-relaxed text-white/60">
-              Grasp.im is Sansa Group&apos;s robotics & data-annotation practice. Vision
+            <p className="mt-6 max-w-[60ch] text-[16px] leading-relaxed text-white/60">
+              Grasp is Sansa Group&apos;s robotics & data-annotation division. Vision
               and 3D perception, grasp planning, field pilots — plus the managed
               labelling pipelines that make it all work.
             </p>
-            <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="/contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-[#2EE6A8] px-7 py-4 text-[15px] font-semibold text-[#04110b] hover:bg-[#7df0c4]">
                 Scope a pilot <ArrowRight size={16} weight="bold" />
               </Link>
               <a href="https://grasp.im" target="_blank" rel="noreferrer" className="inline-flex items-center justify-center rounded-full px-7 py-4 text-[15px] font-semibold text-white ring-1 ring-white/15 hover:bg-white/[0.06]">
-                grasp.im ↗
+                Grasp ↗
               </a>
             </div>
           </Reveal>
         </div>
       </section>
-      <section className="mx-auto max-w-[1100px] px-5 pb-24">
-        <Stagger className="grid gap-4 md:grid-cols-2">
+      <section className="mx-auto max-w-[1100px] px-5 pb-28 md:pb-36">
+        <Stagger className="grid gap-5 md:grid-cols-2">
           {[
             ["Perception systems", "2D detection, segmentation, 6D pose and 3D — optimised for edge latency, not just mAP.", ["mAP-tracked eval sets", "41ms edge inference budgets", "ROS / Isaac / custom stacks"]],
             ["Grasping & manipulation", "Grasp synthesis, motion planning and cell integration — from first pick to shift-long reliability.", ["Sim-to-real transfer", "Gripper & sensor selection", "Throughput & failure analytics"]],

@@ -12,7 +12,7 @@ export default function TermsPage() {
         <h2>1. The site</h2>
         <p>
           sansagroup.eu is provided by Sansa Group AB for general information about our consulting
-          services, Sansavision and Grasp.im. Nothing here is a binding offer; proposals and
+          services, Sansavision and Grasp. Nothing here is a binding offer; proposals and
           statements of work govern engagements separately.
         </p>
       </div>
@@ -53,11 +53,11 @@ export default function TermsPage() {
       </div>
       <div>
         <h2>7. Governing law</h2>
-        <p>These terms are governed by Swedish law. Disputes are subject to the exclusive jurisdiction of Swedish courts, with Stockholm as venue.</p>
+        <p>These terms are governed by Swedish law. Disputes are subject to the exclusive jurisdiction of Swedish courts, with Gothenburg as venue.</p>
       </div>
       <div>
         <h2>8. Contact</h2>
-        <p>Sansa Group AB · Stockholm, Sweden · <a href="mailto:contact@sansagroup.eu">contact@sansagroup.eu</a></p>
+        <p>Sansa Group AB · Gothenburg, Sweden · <a href="mailto:contact@sansagroup.eu">contact@sansagroup.eu</a></p>
       </div>
     </LegalShell>
   );

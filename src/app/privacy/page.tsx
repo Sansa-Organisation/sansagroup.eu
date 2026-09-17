@@ -12,8 +12,8 @@ export default function PrivacyPage() {
         <h2>1. Who we are</h2>
         <p>
           Sansa Group AB (&quot;Sansa Group&quot;, &quot;we&quot;) operates sansagroup.eu, including
-          our Sansavision software/SaaS practice and Grasp.im robotics/annotation practice.
-          Contact: <a href="mailto:contact@sansagroup.eu">contact@sansagroup.eu</a>, Stockholm, Sweden.
+          our Sansavision software/SaaS practice and Grasp robotics/annotation division.
+          Contact: <a href="mailto:contact@sansagroup.eu">contact@sansagroup.eu</a>, Gothenburg, Sweden.
           We are the data controller for personal data collected via this website.
         </p>
       </div>

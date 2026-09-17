@@ -37,4 +37,4 @@ Deploys are manual from a logged-in machine: `npm run deploy`. No CI/GitHub Acti
 
 ## Contact
 
-contact@sansagroup.eu — Stockholm · EU · Remote worldwide
+contact@sansagroup.eu — Gothenburg · EU · Remote worldwide

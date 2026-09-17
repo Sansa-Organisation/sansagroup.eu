@@ -25,14 +25,14 @@ const groups = [
   },
   {
     title: "Robotics & perception",
-    owner: "Grasp.im",
+    owner: "Grasp",
     body: "Vision-guided grasping, 3D perception and field pilots — from dataset to deployed cell.",
     bullets: ["2D / 3D perception, pose, grasp planning", "Sim-to-real, on-robot optimisation", "Safety & CE-minded documentation"],
     price: "Scoped per cell · pilot first",
   },
   {
     title: "Data annotation operations",
-    owner: "Grasp.im",
+    owner: "Grasp",
     body: "Managed labelling for vision, 3D and language: workforce, tooling, QA loops that hold ≥99%.",
     bullets: ["Boxes, masks, keypoints, 3D cuboids, VLA traces", "Double-blind QA + gold sets", "GDPR-compliant handling, EU storage"],
     price: "Per-unit or dedicated pod",
@@ -56,13 +56,13 @@ const groups = [
 export default function ServicesPage() {
   return (
     <>
-      <section className="mesh-bg px-5 pb-14 pt-36 md:pt-44">
+      <section className="mesh-bg px-5 pb-20 pt-40 md:pb-24 md:pt-56">
         <div className="mx-auto max-w-[1100px]">
           <Reveal>
             <h1 className="max-w-[20ch] text-[38px] font-semibold leading-[1.04] tracking-[-0.03em] text-white md:text-[58px]">
               Services that end in production, not slides.
             </h1>
-            <p className="mt-5 max-w-[60ch] text-[16px] leading-relaxed text-white/60">
+            <p className="mt-6 max-w-[60ch] text-[16px] leading-relaxed text-white/60">
               Six practices, one senior team. Every engagement starts with a
               fixed-scope pilot and ends with your team owning everything.
             </p>
@@ -70,8 +70,8 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1100px] px-5 pb-24">
-        <Stagger className="grid gap-4 md:grid-cols-2">
+      <section className="mx-auto max-w-[1100px] px-5 pb-28 md:pb-36">
+        <Stagger className="grid gap-5 md:grid-cols-2">
           {groups.map((g) => (
             <StaggerItem key={g.title}>
               <div className="flex h-full flex-col rounded-[1.75rem] bg-white/[0.03] p-7 ring-1 ring-white/[0.08] md:p-8">

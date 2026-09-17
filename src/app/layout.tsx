@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     template: "%s · Sansa Group AB",
   },
   description:
-    "Sansa Group AB (sansagroup.eu) is a European consulting group. Software & SaaS via Sansavision, robotics & data annotation via Grasp.im. Strategy through delivery.",
-  keywords: ["consulting", "software consulting", "SaaS", "AI", "robotics", "data annotation", "Sansavision", "Grasp.im", "Sansa Group"],
+    "Sansa Group AB (sansagroup.eu) is a European consulting group. Software & SaaS via Sansavision, robotics & data annotation via Grasp. Strategy through delivery.",
+  keywords: ["consulting", "software consulting", "SaaS", "AI", "robotics", "data annotation", "Sansavision", "Grasp", "Sansa Group"],
   authors: [{ name: "Sansa Group AB" }],
   alternates: { canonical: "https://sansagroup.eu" },
   openGraph: {
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     url: "https://sansagroup.eu",
     siteName: "Sansa Group AB",
     title: "Sansa Group AB — Consulting for Software, SaaS, AI & Robotics",
-    description: "Strategy through delivery. Software & SaaS via Sansavision, robotics & annotation via Grasp.im.",
+    description: "Strategy through delivery. Software & SaaS via Sansavision, robotics & annotation via Grasp.",
     images: [{ url: "/og.svg", width: 1200, height: 630 }],
   },
   twitter: { card: "summary_large_image", title: "Sansa Group AB", description: "Consulting for Software, SaaS, AI & Robotics" },
@@ -56,10 +56,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               name: "Sansa Group AB",
               url: "https://sansagroup.eu",
               email: "contact@sansagroup.eu",
-              address: { "@type": "PostalAddress", addressLocality: "Stockholm", addressCountry: "SE" },
+              address: { "@type": "PostalAddress", addressLocality: "Gothenburg", addressCountry: "SE" },
               subOrganization: [
                 { "@type": "Organization", name: "Sansavision", url: "https://sansavision.se" },
-                { "@type": "Organization", name: "Grasp.im", url: "https://grasp.im" },
+                { "@type": "Organization", name: "Grasp", url: "https://grasp.im" },
               ],
             }),
           }}

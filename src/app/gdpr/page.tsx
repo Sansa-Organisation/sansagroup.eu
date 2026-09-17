@@ -10,7 +10,7 @@ export default function GdprPage() {
     <LegalShell eyebrow="Legal · GDPR (EU 2016/679)" title="GDPR Privacy Notice" updated="17 September 2026">
       <div>
         <h2>1. Controller</h2>
-        <p>Sansa Group AB, Stockholm, Sweden · <a href="mailto:contact@sansagroup.eu">contact@sansagroup.eu</a> · sansagroup.eu. No separate DPO is appointed; privacy enquiries go to the same address and are handled by management.</p>
+        <p>Sansa Group AB, Gothenburg, Sweden · <a href="mailto:contact@sansagroup.eu">contact@sansagroup.eu</a> · sansagroup.eu. No separate DPO is appointed; privacy enquiries go to the same address and are handled by management.</p>
       </div>
       <div>
         <h2>2. Purposes, categories & bases</h2>
@@ -22,7 +22,7 @@ export default function GdprPage() {
       </div>
       <div>
         <h2>3. Recipients & processors</h2>
-        <p>Cloudflare, Inc. (CDN/hosting/security, Art. 28 DPA) and our email-delivery provider for form messages. Sub-processors for Sansavision/Grasp.im client work are governed by separate DPAs and are out of scope for this website notice.</p>
+        <p>Cloudflare, Inc. (CDN/hosting/security, Art. 28 DPA) and our email-delivery provider for form messages. Sub-processors for Sansavision/Grasp client work are governed by separate DPAs and are out of scope for this website notice.</p>
       </div>
       <div>
         <h2>4. Transfers outside EEA</h2>
