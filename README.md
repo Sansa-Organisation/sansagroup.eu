@@ -33,7 +33,7 @@ See `DEPLOY.md` for the full checklist (DNS, TLS, redirects, cache, WAF).
 ## GitHub
 
 Repo: `Sansa-Organisation/sansagroup.eu` (public). `main` is production.
-Cloudflare Git integration or GitHub Actions (`.github/workflows/deploy.yml`) deploys on push.
+Deploys are manual from a logged-in machine: `npm run deploy`. No CI/GitHub Actions.
 
 ## Contact
 

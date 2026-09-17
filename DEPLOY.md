@@ -50,13 +50,15 @@ npx wrangler secret put RESEND_API_KEY   # from https://resend.com/api-keys
 Verify `sansagroup.eu` in Resend (SPF/DKIM/DMARC), keep `from: noreply@sansagroup.eu`.
 Without the secret, `/api/contact` still validates + returns 200 and logs (safe for staging).
 
-## 5. Git deploys (pick one)
+## 5. Deploys (manual only — no CI, no GitHub Actions)
 
-**A. Cloudflare Git integration:** Workers & Pages → Create → Import `Sansa-Organisation/sansagroup.eu`,
-build command `npx opennextjs-cloudflare build`, deploy command `npx opennextjs-cloudflare deploy`.
+Deploy from a logged-in machine:
 
-**B. GitHub Actions** (`.github/workflows/deploy.yml` in this repo): needs secrets
-`CLOUDFLARE_API_TOKEN` (Workers edit + zones DNS) and `CLOUDFLARE_ACCOUNT_ID`.
+```bash
+npm run deploy
+```
+
+(`npx wrangler login` once per machine; no tokens stored in GitHub.)
 
 ## 6. Hardening checklist
 
