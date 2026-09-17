@@ -1,0 +1,24 @@
+# ── Sansa Group AB · sansagroup.eu · Cloudflare Workers ──
+name = "sansagroup-eu"
+compatibility_date = "2026-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Custom domain is attached in Cloudflare dashboard (Workers & Pages → Custom Domains)
+# or via `wrangler domains add sansagroup.eu`. See DEPLOY.md.
+# Apex + www both route to this Worker:
+#   sansagroup.eu
+#   www.sansagroup.eu
+
+[vars]
+NEXT_PUBLIC_SITE_URL = "https://sansagroup.eu"
+CONTACT_TO = "contact@sansagroup.eu"
+
+# Uncomment when you add Resend:
+# [vars]
+# (keep RESEND_API_KEY as a secret: `wrangler secret put RESEND_API_KEY`)
+
+[observability]
+enabled = true
+
+[placement]
+mode = "smart"

@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+  --color-abyss: #05080c;
+  --color-ink: #0a1118;
+  --color-panel: #0d151d;
+  --color-line: rgba(255, 255, 255, 0.08);
+  --color-mist: #9fb0bf;
+  --color-accent: #2ee6a8;
+  --color-accent-deep: #0ea472;
+
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-float-slow: floatSlow 9s ease-in-out infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  @keyframes floatSlow {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-14px); }
+  }
+}
+
+:root {
+  --background: #05080c;
+  --foreground: #eef4f0;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #2ee6a8;
+  color: #04110b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #05080c;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2d3a;
+  border-radius: 8px;
+  border: 2px solid #05080c;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2ee6a8;
+}
+
+/* film grain - fixed overlay only */
+.grain::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.mask-fade-x {
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.mesh-bg {
+  background:
+    radial-gradient(ellipse 60% 45% at 15% 0%, rgba(46, 230, 168, 0.13), transparent 65%),
+    radial-gradient(ellipse 50% 40% at 90% 15%, rgba(56, 130, 246, 0.1), transparent 65%),
+    radial-gradient(ellipse 45% 35% at 50% 100%, rgba(46, 230, 168, 0.06), transparent 60%),
+    #05080c;
+}
+
+.card-sheen {
+  position: relative;
+}
+.card-sheen::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0) 32%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
