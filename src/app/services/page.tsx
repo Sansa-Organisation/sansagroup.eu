@@ -41,7 +41,7 @@ const groups = [
     title: "Cloud, edge & platform",
     owner: "Group",
     body: "Cloudflare-first architectures, CI/CD, observability and FinOps. Fast globally, compliant in the EU.",
-    bullets: ["Cloudflare Workers, R2, D1, Queues", "GitHub Actions pipelines, preview envs", "Cost, latency & carbon reporting"],
+    bullets: ["Cloudflare Workers, R2, D1, Queues", "CI pipelines, preview envs", "Cost, latency & carbon reporting"],
     price: "Audit from €8k",
   },
   {
