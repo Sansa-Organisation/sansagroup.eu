@@ -1,21 +1,28 @@
-# ── Sansa Group AB · sansagroup.eu · Cloudflare Workers ──
+# ── Sansa Group AB · sansagroup.eu · Cloudflare Workers (OpenNext) ──
 name = "sansagroup-eu"
 compatibility_date = "2026-09-01"
 compatibility_flags = ["nodejs_compat"]
 
-# Custom domain is attached in Cloudflare dashboard (Workers & Pages → Custom Domains)
-# or via `wrangler domains add sansagroup.eu`. See DEPLOY.md.
-# Apex + www both route to this Worker:
-#   sansagroup.eu
-#   www.sansagroup.eu
+# OpenNext output — required for `opennextjs-cloudflare deploy`
+main = ".open-next/worker.js"
+workers_dev = true
+
+# Custom domains via Workers Routes (apex + www)
+routes = [
+  { pattern = "sansagroup.eu/*", zone_name = "sansagroup.eu" },
+  { pattern = "www.sansagroup.eu/*", zone_name = "sansagroup.eu" }
+]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
 
 [vars]
 NEXT_PUBLIC_SITE_URL = "https://sansagroup.eu"
 CONTACT_TO = "contact@sansagroup.eu"
 
-# Uncomment when you add Resend:
-# [vars]
-# (keep RESEND_API_KEY as a secret: `wrangler secret put RESEND_API_KEY`)
+# RESEND_API_KEY is a secret, not a var:
+#   wrangler secret put RESEND_API_KEY
 
 [observability]
 enabled = true
